@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: "rajdhani";
+    color: #e9e9e9;
+}
+
+body {
+    margin: 0;
+    background-color: #e9e9e9; 
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+  .card {
+    height: auto;
+    width: calc(25% - 24px);
+    margin: 8px; 
+    background-color: rgba(0, 1, 55);
+    border-radius: 15px;
+    padding: 12px;
+    float: left; 
+}
+
+.card-content {
+  border: 3px solid rgba(0, 1, 54);
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-template-rows: auto auto auto auto auto auto; 
+  grid-row-gap: 16px; 
+}
+
+.rocket-image {
+    grid-column: span 4;
+    max-width: 100%;
+    max-height: 170px;
+}
+
+.rocket-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.stat-icon {
+  grid-column: span 2;
+  font-weight: 700;
+}
+
+.stat-value {
+  grid-column: span 2;
+}
+
+.goal-icon {
+  grid-column: span 2;
+  font-weight: 700;
+}
+
+.rocket-info {
+    grid-column: span 4;
+    margin-bottom: 16px;
+    margin-top: -12px;
+}
+
+/* aenderung */
+.card-number {
+  grid-column: span 2;
+  justify-self: end; 
+  text-align: right;
+}
+
+.card-title {
+  grid-column: span 2; 
+  grid-row: 1; 
+}
+
+.card-name {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.card-group {
+  font-weight: 100;
+  letter-spacing: 0.02em;
+}
+
+.card:hover {
+  transform: rotateX(10deg) rotateY(-10deg);
+}
